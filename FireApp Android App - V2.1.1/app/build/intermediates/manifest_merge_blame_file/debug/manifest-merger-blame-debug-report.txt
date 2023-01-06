@@ -1,0 +1,1370 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.devlomi.fireapp"
+4    android:versionCode="31"
+5    android:versionName="2.1.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml
+10    <!-- PERMISSIONS -->
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:6:5-67
+11-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:7:5-79
+12-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:8:5-76
+13-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:8:22-73
+14    <uses-permission android:name="android.permission.READ_CONTACTS" />
+14-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:9:5-72
+14-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:9:22-69
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:10:5-80
+15-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:10:22-77
+16    <uses-permission
+16-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:11:5-13:38
+17        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+17-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:12:9-65
+18        android:maxSdkVersion="28" />
+18-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:13:9-35
+19    <uses-permission android:name="android.permission.CAMERA" />
+19-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:14:5-65
+19-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:14:22-62
+20    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+20-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:15:5-71
+20-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:15:22-68
+21    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+21-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:16:5-80
+21-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:16:22-77
+22    <uses-permission android:name="android.permission.WAKE_LOCK" />
+22-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:17:5-68
+22-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:17:22-65
+23    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+23-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:18:5-81
+23-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:18:22-78
+24    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+24-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:19:5-79
+24-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:19:22-76
+25    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+25-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:20:5-81
+25-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:20:22-78
+26    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+26-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:21:5-75
+26-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:21:22-72
+27    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+27-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:22:5-82
+27-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:22:22-79
+28    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+28-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:23:5-77
+28-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:23:22-74
+29    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+29-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:24:5-81
+29-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:24:22-78
+30
+31    <uses-feature
+31-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:26:5-28:36
+32        android:name="android.hardware.location.network"
+32-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:27:9-57
+33        android:required="false" />
+33-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:28:9-33
+34    <uses-feature
+34-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:29:5-31:36
+35        android:name="android.hardware.location.gps"
+35-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:30:9-53
+36        android:required="false" />
+36-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:31:9-33
+37
+38    <queries>
+38-->[com.github.CanHub:Android-Image-Cropper:2.1.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/059cb2b2dc6a8e9167b73ffb2b282e40/jetified-Android-Image-Cropper-2.1.1/AndroidManifest.xml:11:5-22:15
+39        <intent>
+39-->[com.github.CanHub:Android-Image-Cropper:2.1.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/059cb2b2dc6a8e9167b73ffb2b282e40/jetified-Android-Image-Cropper-2.1.1/AndroidManifest.xml:12:9-18:18
+40            <action android:name="android.intent.action.GET_CONTENT" />
+40-->[com.github.CanHub:Android-Image-Cropper:2.1.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/059cb2b2dc6a8e9167b73ffb2b282e40/jetified-Android-Image-Cropper-2.1.1/AndroidManifest.xml:13:13-72
+40-->[com.github.CanHub:Android-Image-Cropper:2.1.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/059cb2b2dc6a8e9167b73ffb2b282e40/jetified-Android-Image-Cropper-2.1.1/AndroidManifest.xml:13:21-69
+41
+42            <category android:name="android.intent.category.OPENABLE" />
+42-->[com.github.CanHub:Android-Image-Cropper:2.1.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/059cb2b2dc6a8e9167b73ffb2b282e40/jetified-Android-Image-Cropper-2.1.1/AndroidManifest.xml:15:13-73
+42-->[com.github.CanHub:Android-Image-Cropper:2.1.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/059cb2b2dc6a8e9167b73ffb2b282e40/jetified-Android-Image-Cropper-2.1.1/AndroidManifest.xml:15:23-70
+43
+44            <data android:mimeType="*/*" />
+44-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:151:17-55
+44-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:151:23-52
+45        </intent>
+46        <intent>
+46-->[com.github.CanHub:Android-Image-Cropper:2.1.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/059cb2b2dc6a8e9167b73ffb2b282e40/jetified-Android-Image-Cropper-2.1.1/AndroidManifest.xml:19:9-21:18
+47            <action android:name="android.media.action.IMAGE_CAPTURE" />
+47-->[com.github.CanHub:Android-Image-Cropper:2.1.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/059cb2b2dc6a8e9167b73ffb2b282e40/jetified-Android-Image-Cropper-2.1.1/AndroidManifest.xml:20:13-73
+47-->[com.github.CanHub:Android-Image-Cropper:2.1.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/059cb2b2dc6a8e9167b73ffb2b282e40/jetified-Android-Image-Cropper-2.1.1/AndroidManifest.xml:20:21-70
+48        </intent>
+49        <!-- For browser content -->
+50        <intent>
+50-->[com.google.android.gms:play-services-ads-lite:19.7.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/d6c8158d8bed65bb190db24200ef6b8c/jetified-play-services-ads-lite-19.7.0/AndroidManifest.xml:30:9-36:18
+51            <action android:name="android.intent.action.VIEW" />
+51-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:261:17-69
+51-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:261:25-66
+52
+53            <category android:name="android.intent.category.BROWSABLE" />
+53-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:264:17-78
+53-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:264:27-75
+54
+55            <data android:scheme="https" />
+55-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:151:17-55
+55-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:269:21-42
+56        </intent> <!-- End of browser content -->
+57        <!-- For CustomTabsService -->
+58        <intent>
+58-->[com.google.android.gms:play-services-ads-lite:19.7.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/d6c8158d8bed65bb190db24200ef6b8c/jetified-play-services-ads-lite-19.7.0/AndroidManifest.xml:39:9-41:18
+59            <action android:name="android.support.customtabs.action.CustomTabsService" />
+59-->[com.google.android.gms:play-services-ads-lite:19.7.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/d6c8158d8bed65bb190db24200ef6b8c/jetified-play-services-ads-lite-19.7.0/AndroidManifest.xml:40:13-90
+59-->[com.google.android.gms:play-services-ads-lite:19.7.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/d6c8158d8bed65bb190db24200ef6b8c/jetified-play-services-ads-lite-19.7.0/AndroidManifest.xml:40:21-87
+60        </intent>
+61    </queries>
+62
+63    <uses-permission android:name="android.permission.USE_BIOMETRIC" /> <!-- suppress DeprecatedClassUsageInspection -->
+63-->[androidx.biometric:biometric:1.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/f10f828e17898c5b7808e276ecc93966/biometric-1.1.0/AndroidManifest.xml:24:5-72
+63-->[androidx.biometric:biometric:1.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/f10f828e17898c5b7808e276ecc93966/biometric-1.1.0/AndroidManifest.xml:24:22-69
+64    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+64-->[androidx.biometric:biometric:1.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/f10f828e17898c5b7808e276ecc93966/biometric-1.1.0/AndroidManifest.xml:27:5-74
+64-->[androidx.biometric:biometric:1.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/f10f828e17898c5b7808e276ecc93966/biometric-1.1.0/AndroidManifest.xml:27:22-71
+65
+66    <uses-feature
+66-->[com.google.android.gms:play-services-maps:17.0.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/9a084d0189727e265a12b4523825e788/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+67        android:glEsVersion="0x00020000"
+67-->[com.google.android.gms:play-services-maps:17.0.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/9a084d0189727e265a12b4523825e788/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+68        android:required="true" /> <!-- for android -->
+68-->[com.google.android.gms:play-services-maps:17.0.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/9a084d0189727e265a12b4523825e788/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+69    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+70    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+71    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+72    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+73    <!-- for Samsung -->
+74    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+74-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+74-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+75    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+75-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+75-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+76    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+76-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+76-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+77    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+77-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+77-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+78    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+78-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+78-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+79    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+79-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+79-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+80    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+80-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+80-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+81    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+81-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+81-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+82    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+82-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+82-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+83    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+83-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+83-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+84    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+84-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+84-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+85    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+85-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+85-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+86    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+86-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+86-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+87    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+87-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+87-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+88    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+88-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+88-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+89    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+89-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+89-->[me.leolin:ShortcutBadger:1.1.22] /Users/jahan/.gradle/caches/transforms-2/files-2.1/14597c84f3a9a31ed070ec4a28025a62/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+90    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+90-->[com.google.android.gms:play-services-measurement:18.0.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/7eb3a1bba018c716726cf43924d5cb1d/jetified-play-services-measurement-18.0.2/AndroidManifest.xml:26:5-110
+90-->[com.google.android.gms:play-services-measurement:18.0.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/7eb3a1bba018c716726cf43924d5cb1d/jetified-play-services-measurement-18.0.2/AndroidManifest.xml:26:22-107
+91
+92    <application
+92-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:33:5-346:19
+93        android:name="com.devlomi.fireapp.utils.MyApp"
+93-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:34:9-36
+94        android:allowBackup="false"
+94-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:35:9-36
+95        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+95-->[androidx.core:core:1.5.0-beta01] /Users/jahan/.gradle/caches/transforms-2/files-2.1/d9bf8b0470e543c0af8a1e7a74ee9a52/core-1.5.0-beta01/AndroidManifest.xml:24:18-86
+96        android:debuggable="true"
+97        android:icon="@mipmap/ic_launcher"
+97-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:36:9-43
+98        android:label="@string/app_name"
+98-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:37:9-41
+99        android:roundIcon="@mipmap/ic_launcher_round"
+99-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:38:9-54
+100        android:supportsRtl="false"
+100-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:39:9-36
+101        android:testOnly="true"
+102        android:theme="@style/SplashScreenTheme" >
+102-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:40:9-49
+103        <service
+103-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:43:9-46:40
+104            android:name="com.devlomi.fireapp.services.CompleteSetupService"
+104-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:44:13-58
+105            android:enabled="true"
+105-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:45:13-35
+106            android:exported="false" />
+106-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:46:13-37
+107        <service
+107-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:47:9-50:40
+108            android:name="com.devlomi.fireapp.services.BackupService"
+108-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:48:13-51
+109            android:enabled="true"
+109-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:49:13-35
+110            android:exported="false" />
+110-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:50:13-37
+111
+112        <uses-library
+112-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:52:9-54:40
+113            android:name="org.apache.http.legacy"
+113-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:53:13-50
+114            android:required="false" />
+114-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:54:13-37
+115
+116        <!-- ACTIVITIES -->
+117        <activity
+117-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:57:9-61:47
+118            android:name="com.devlomi.fireapp.activities.setup.EnterUsernameActivity"
+118-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:58:13-67
+119            android:screenOrientation="portrait"
+119-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:59:13-49
+120            android:theme="@style/AppTheme"
+120-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:61:13-44
+121            android:windowSoftInputMode="adjustResize" />
+121-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:60:13-55
+122        <activity
+122-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:63:9-65:52
+123            android:name="com.devlomi.fireapp.activities.LoggedOutActivity"
+123-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:64:13-57
+124            android:screenOrientation="portrait" />
+124-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:65:13-49
+125        <activity
+125-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:66:9-68:52
+126            android:name="com.devlomi.fireapp.activities.SaveE2EActivity"
+126-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:67:13-55
+127            android:screenOrientation="portrait" />
+127-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:68:13-49
+128        <activity
+128-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:69:9-73:54
+129            android:name="com.devlomi.fireapp.activities.LockscreenActivity"
+129-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:70:13-58
+130            android:launchMode="singleTask"
+130-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:71:13-44
+131            android:screenOrientation="portrait"
+131-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:72:13-49
+132            android:theme="@style/FullscreenTheme" />
+132-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:73:13-51
+133        <activity
+133-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:74:9-79:71
+134            android:name="com.devlomi.fireapp.activities.authentication.AuthenticationActivity"
+134-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:75:13-77
+135            android:exported="true"
+135-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:76:13-36
+136            android:screenOrientation="portrait"
+136-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:77:13-49
+137            android:theme="@style/AppTheme.NoActionBar"
+137-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:78:13-56
+138            android:windowSoftInputMode="stateVisible|adjustResize" />
+138-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:79:13-68
+139        <activity
+139-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:80:9-83:59
+140            android:name="com.devlomi.fireapp.activities.UpdateActivity"
+140-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:81:13-54
+141            android:screenOrientation="portrait"
+141-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:82:13-49
+142            android:theme="@style/AppTheme.NoActionBar" />
+142-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:83:13-56
+143        <activity
+143-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:84:9-88:71
+144            android:name="com.devlomi.fireapp.activities.TextStatusActivity"
+144-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:85:13-58
+145            android:screenOrientation="portrait"
+145-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:86:13-49
+146            android:theme="@style/AppTheme.Translucent"
+146-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:87:13-56
+147            android:windowSoftInputMode="stateVisible|adjustResize" />
+147-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:88:13-68
+148        <activity
+148-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:89:9-93:59
+149            android:name="com.devlomi.fireapp.activities.main.MainActivity"
+149-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:90:13-57
+150            android:launchMode="singleTop"
+150-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:91:13-43
+151            android:screenOrientation="portrait"
+151-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:92:13-49
+152            android:theme="@style/AppTheme.NoActionBar" />
+152-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:93:13-56
+153        <activity
+153-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:94:9-97:47
+154            android:name="com.devlomi.fireapp.activities.ShareGroupLinkActivity"
+154-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:95:13-62
+155            android:screenOrientation="portrait"
+155-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:96:13-49
+156            android:theme="@style/AppTheme" />
+156-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:97:13-44
+157        <activity
+157-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:98:9-106:20
+158            android:name="com.devlomi.fireapp.activities.SplashActivity"
+158-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:99:13-54
+159            android:screenOrientation="portrait" >
+159-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:100:13-49
+160            <intent-filter>
+160-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:101:13-105:29
+161                <action android:name="android.intent.action.MAIN" />
+161-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:102:17-69
+161-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:102:25-66
+162
+163                <category android:name="android.intent.category.LAUNCHER" />
+163-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:104:17-77
+163-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:104:27-74
+164            </intent-filter>
+165        </activity>
+166        <activity
+166-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:107:9-110:59
+167            android:name="com.devlomi.fireapp.activities.NewChatActivity"
+167-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:108:13-55
+168            android:screenOrientation="portrait"
+168-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:109:13-49
+169            android:theme="@style/AppTheme.NoActionBar" />
+169-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:110:13-56
+170        <activity
+170-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:111:9-116:59
+171            android:name="com.devlomi.fireapp.activities.main.messaging.ChatActivity"
+171-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:112:13-67
+172            android:label=""
+172-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:113:13-29
+173            android:parentActivityName="com.devlomi.fireapp.activities.main.MainActivity"
+173-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:114:13-71
+174            android:screenOrientation="portrait"
+174-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:115:13-49
+175            android:theme="@style/AppTheme.NoActionBar" />
+175-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:116:13-56
+176        <activity
+176-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:117:9-121:54
+177            android:name="com.devlomi.fireapp.activities.FullscreenActivity"
+177-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:118:13-58
+178            android:label=""
+178-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:119:13-29
+179            android:screenOrientation="portrait"
+179-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:120:13-49
+180            android:theme="@style/FullScreenTheme" />
+180-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:121:13-51
+181        <activity
+181-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:122:9-124:47
+182            android:name="com.canhub.cropper.CropImageActivity"
+182-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:123:13-64
+183            android:theme="@style/AppTheme" />
+183-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:124:13-44
+184        <activity
+184-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:125:9-128:59
+185            android:name="com.devlomi.fireapp.activities.AgreePrivacyPolicyActivity"
+185-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:126:13-66
+186            android:exported="true"
+186-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:127:13-36
+187            android:theme="@style/AppTheme.NoActionBar" />
+187-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:128:13-56
+188        <activity
+188-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:129:9-132:59
+189            android:name="com.devlomi.fireapp.activities.CameraActivity"
+189-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:130:13-54
+190            android:screenOrientation="portrait"
+190-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:131:13-49
+191            android:theme="@style/AppTheme.NoActionBar" />
+191-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:132:13-56
+192        <activity
+192-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:133:9-135:50
+193            android:name="com.devlomi.fireapp.activities.ProfilePhotoDialog"
+193-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:134:13-58
+194            android:theme="@style/DialogTheme" />
+194-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:135:13-47
+195        <activity
+195-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:136:9-200:20
+196            android:name="com.devlomi.fireapp.activities.ForwardActivity"
+196-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:137:13-55
+197            android:launchMode="singleTop"
+197-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:138:13-43
+198            android:screenOrientation="portrait"
+198-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:139:13-49
+199            android:theme="@style/AppTheme.NoActionBar" >
+199-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:140:13-56
+200
+201            <!-- these intent filters to receive data from other apps including images,videos,audio,contacts -->
+202
+203
+204            <!-- receive text -->
+205            <intent-filter>
+205-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:146:13-152:29
+206                <action android:name="android.intent.action.SEND" />
+206-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:147:17-69
+206-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:147:25-66
+207
+208                <category android:name="android.intent.category.DEFAULT" />
+208-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:149:17-76
+208-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:149:27-73
+209
+210                <data android:mimeType="text/plain" />
+210-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:151:17-55
+210-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:151:23-52
+211            </intent-filter>
+212
+213            <!-- receive one image -->
+214            <intent-filter>
+214-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:155:13-161:29
+215                <action android:name="android.intent.action.SEND" />
+215-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:147:17-69
+215-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:147:25-66
+216
+217                <category android:name="android.intent.category.DEFAULT" />
+217-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:149:17-76
+217-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:149:27-73
+218
+219                <data android:mimeType="image/*" />
+219-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:151:17-55
+219-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:151:23-52
+220            </intent-filter>
+221
+222            <!-- receive multiple images -->
+223
+224            <intent-filter>
+224-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:165:13-171:29
+225                <action android:name="android.intent.action.SEND_MULTIPLE" />
+225-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:166:17-78
+225-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:166:25-75
+226
+227                <category android:name="android.intent.category.DEFAULT" />
+227-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:149:17-76
+227-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:149:27-73
+228
+229                <data android:mimeType="image/*" />
+229-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:151:17-55
+229-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:151:23-52
+230            </intent-filter>
+231
+232            <!-- receive one video only -->
+233
+234            <intent-filter>
+234-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:175:13-181:29
+235                <action android:name="android.intent.action.SEND" />
+235-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:147:17-69
+235-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:147:25-66
+236
+237                <category android:name="android.intent.category.DEFAULT" />
+237-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:149:17-76
+237-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:149:27-73
+238
+239                <data android:mimeType="video/*" />
+239-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:151:17-55
+239-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:151:23-52
+240            </intent-filter>
+241
+242            <!-- receive one audio -->
+243            <intent-filter>
+243-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:184:13-190:29
+244                <action android:name="android.intent.action.SEND" />
+244-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:147:17-69
+244-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:147:25-66
+245
+246                <category android:name="android.intent.category.DEFAULT" />
+246-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:149:17-76
+246-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:149:27-73
+247
+248                <data android:mimeType="audio/*" />
+248-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:151:17-55
+248-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:151:23-52
+249            </intent-filter>
+250
+251            <!-- receive contacts -->
+252            <intent-filter>
+252-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:193:13-199:29
+253                <action android:name="android.intent.action.SEND" />
+253-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:147:17-69
+253-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:147:25-66
+254
+255                <category android:name="android.intent.category.DEFAULT" />
+255-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:149:17-76
+255-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:149:27-73
+256
+257                <data android:mimeType="text/x-vcard" />
+257-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:151:17-55
+257-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:151:23-52
+258            </intent-filter>
+259        </activity>
+260        <activity
+260-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:201:9-204:59
+261            android:name="com.devlomi.fireapp.activities.UserDetailsActivity"
+261-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:202:13-59
+262            android:screenOrientation="portrait"
+262-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:203:13-49
+263            android:theme="@style/AppTheme.NoActionBar" />
+263-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:204:13-56
+264        <activity
+264-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:205:9-208:59
+265            android:name="com.devlomi.fireapp.activities.MediaGalleryActivity"
+265-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:206:13-60
+266            android:screenOrientation="portrait"
+266-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:207:13-49
+267            android:theme="@style/AppTheme.NoActionBar" />
+267-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:208:13-56
+268        <activity
+268-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:209:9-212:47
+269            android:name="com.devlomi.fireapp.activities.SelectContactNumbersActivity"
+269-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:210:13-68
+270            android:screenOrientation="portrait"
+270-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:211:13-49
+271            android:theme="@style/AppTheme" />
+271-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:212:13-44
+272        <activity
+272-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:213:9-216:47
+273            android:name="com.devlomi.fireapp.activities.ContactDetailsActivity"
+273-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:214:13-62
+274            android:screenOrientation="portrait"
+274-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:215:13-49
+275            android:theme="@style/AppTheme" />
+275-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:216:13-44
+276        <activity
+276-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:217:9-222:52
+277            android:name="com.devlomi.fireapp.activities.settings.SettingsActivity"
+277-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:218:13-65
+278            android:exported="true"
+278-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:219:13-36
+279            android:label="@string/title_activity_settings"
+279-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:220:13-60
+280            android:screenOrientation="portrait"
+280-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:221:13-49
+281            android:theme="@style/SettingsTheme" />
+281-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:222:13-49
+282        <activity
+282-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:223:9-226:54
+283            android:name="com.devlomi.fireapp.activities.ProfilePhotoActivity"
+283-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:224:13-60
+284            android:screenOrientation="portrait"
+284-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:225:13-49
+285            android:theme="@style/FullScreenTheme" />
+285-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:226:13-51
+286        <activity
+286-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:227:9-230:59
+287            android:name="com.devlomi.fireapp.activities.setup.SetupUserActivity"
+287-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:228:13-63
+288            android:screenOrientation="portrait"
+288-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:229:13-49
+289            android:theme="@style/AppTheme.NoActionBar" />
+289-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:230:13-56
+290        <activity
+290-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:231:9-233:59
+291            android:name="com.devlomi.fireapp.activities.NewGroupActivity"
+291-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:232:13-56
+292            android:theme="@style/AppTheme.NoActionBar" />
+292-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:233:13-56
+293        <activity
+293-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:234:9-238:59
+294            android:name="com.devlomi.fireapp.activities.ViewStatusActivity"
+294-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:235:13-58
+295            android:screenOrientation="portrait"
+295-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:236:13-49
+296            android:theme="@style/FullscreenTheme"
+296-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:237:13-51
+297            android:windowSoftInputMode="adjustNothing" />
+297-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:238:13-56
+298        <activity
+298-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:239:9-247:20
+299            android:name="com.devlomi.fireapp.activities.MyStatusActivity"
+299-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:240:13-56
+300            android:label="@string/title_activity_my_status"
+300-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:241:13-61
+301            android:parentActivityName="com.devlomi.fireapp.activities.main.MainActivity"
+301-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:242:13-71
+302            android:theme="@style/AppTheme.NoActionBar" >
+302-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:243:13-56
+303            <meta-data
+303-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:244:13-246:84
+304                android:name="android.support.PARENT_ACTIVITY"
+304-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:245:17-63
+305                android:value="com.devlomi.fireapp.activities.main.MainActivity" />
+305-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:246:17-81
+306        </activity>
+307        <activity
+307-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:248:9-251:59
+308            android:name="com.devlomi.fireapp.activities.calling.CallingActivity"
+308-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:249:13-63
+309            android:screenOrientation="portrait"
+309-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:250:13-49
+310            android:theme="@style/AppTheme.NoActionBar" />
+310-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:251:13-56
+311        <activity
+311-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:252:9-255:47
+312            android:name="com.devlomi.fireapp.activities.NewCallActivity"
+312-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:253:13-55
+313            android:screenOrientation="portrait"
+313-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:254:13-49
+314            android:theme="@style/AppTheme" />
+314-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:255:13-44
+315        <activity
+315-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:256:9-275:20
+316            android:name="com.devlomi.fireapp.activities.AcceptInviteLink"
+316-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:257:13-56
+317            android:screenOrientation="portrait"
+317-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:258:13-49
+318            android:theme="@style/DialogTheme" >
+318-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:259:13-47
+319            <intent-filter>
+319-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:260:13-274:29
+320                <action android:name="android.intent.action.VIEW" />
+320-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:261:17-69
+320-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:261:25-66
+321
+322                <category android:name="android.intent.category.DEFAULT" />
+322-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:149:17-76
+322-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:149:27-73
+323                <category android:name="android.intent.category.BROWSABLE" />
+323-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:264:17-78
+323-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:264:27-75
+324
+325                <data
+325-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:151:17-55
+326                    android:host="@string/group_invite_host"
+326-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:267:21-61
+327                    android:pathPrefix="/"
+327-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:268:21-43
+328                    android:scheme="http" />
+328-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:269:21-42
+329                <data
+329-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:151:17-55
+330                    android:host="@string/group_invite_host"
+330-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:267:21-61
+331                    android:pathPrefix="/"
+331-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:268:21-43
+332                    android:scheme="https" />
+332-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:269:21-42
+333            </intent-filter>
+334        </activity>
+335        <activity
+335-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:276:9-279:59
+336            android:name="com.devlomi.fireapp.placespicker.PlacesPickerActivity"
+336-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:277:13-62
+337            android:screenOrientation="portrait"
+337-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:278:13-49
+338            android:theme="@style/AppTheme.NoActionBar" />
+338-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:279:13-56
+339        <activity
+339-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:280:9-283:62
+340            android:name="com.devlomi.fireapp.extensions.ExitAndRemoveFromRecentAppsDummyActivity"
+340-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:281:13-80
+341            android:screenOrientation="portrait"
+341-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:282:13-49
+342            android:theme="@android:style/Theme.NoDisplay" /> <!-- SERVICES -->
+342-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:283:13-59
+343        <service
+343-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:284:9-286:72
+344            android:name="com.devlomi.fireapp.job.NetworkJobService"
+344-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:285:13-50
+345            android:permission="android.permission.BIND_JOB_SERVICE" />
+345-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:286:13-69
+346        <service
+346-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:287:9-289:72
+347            android:name="com.devlomi.fireapp.job.SaveTokenJob"
+347-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:288:13-45
+348            android:permission="android.permission.BIND_JOB_SERVICE" />
+348-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:289:13-69
+349        <service
+349-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:290:9-292:72
+350            android:name="com.devlomi.fireapp.job.SetLastSeenJob"
+350-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:291:13-47
+351            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- <service -->
+351-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:292:13-69
+352        <service
+352-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:293:9-300:19
+353            android:name="com.devlomi.fireapp.services.MyFCMService"
+353-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:294:13-50
+354            android:enabled="true"
+354-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:295:13-35
+355            android:exported="false" >
+355-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:296:13-37
+356            <intent-filter>
+356-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:297:13-299:29
+357                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+357-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:298:17-78
+357-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:298:25-75
+358            </intent-filter>
+359        </service>
+360        <service
+360-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:301:9-303:40
+361            android:name="com.devlomi.fireapp.services.FCMRegistrationService"
+361-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:302:13-60
+362            android:exported="false" />
+362-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:303:13-37
+363        <service
+363-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:304:9-307:40
+364            android:name="com.devlomi.fireapp.services.InternetConnectedListener"
+364-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:305:13-63
+365            android:enabled="true"
+365-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:306:13-35
+366            android:exported="false" />
+366-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:307:13-37
+367        <service android:name="com.devlomi.fireapp.services.NetworkService" />
+367-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:308:9-60
+367-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:308:18-57
+368        <service
+368-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:309:9-312:40
+369            android:name="com.devlomi.fireapp.services.AudioService"
+369-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:310:13-50
+370            android:enabled="true"
+370-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:311:13-35
+371            android:exported="false" />
+371-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:312:13-37
+372
+373        <receiver
+373-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:314:9-316:40
+374            android:name="com.devlomi.fireapp.receivers.HandleReplyReceiver"
+374-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:315:13-58
+375            android:exported="false" />
+375-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:316:13-37
+376        <receiver
+376-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:317:9-319:40
+377            android:name="com.devlomi.fireapp.receivers.MarkAsReadReceiver"
+377-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:318:13-57
+378            android:exported="false" />
+378-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:319:13-37
+379
+380        <service
+380-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:321:9-323:40
+381            android:name="com.devlomi.fireapp.services.CallingService"
+381-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:322:13-52
+382            android:exported="false" />
+382-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:323:13-37
+383
+384        <provider
+385            android:name="androidx.core.content.FileProvider"
+385-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:326:13-62
+386            android:authorities="com.devlomi.fireapp.provider"
+386-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:327:13-60
+387            android:exported="false"
+387-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:328:13-37
+388            android:grantUriPermissions="true" >
+388-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:329:13-47
+389            <meta-data
+389-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:330:13-332:58
+390                android:name="android.support.FILE_PROVIDER_PATHS"
+390-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:331:17-67
+391                android:resource="@xml/provider_paths" />
+391-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:332:17-55
+392        </provider>
+393
+394        <meta-data
+394-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:335:9-337:52
+395            android:name="com.google.android.geo.API_KEY"
+395-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:336:13-58
+396            android:value="@string/maps_api_key" />
+396-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:337:13-49
+397        <meta-data
+397-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:338:9-340:52
+398            android:name="com.google.android.gms.ads.APPLICATION_ID"
+398-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:339:13-69
+399            android:value="@string/admob_app_id" />
+399-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:340:13-49
+400
+401        <activity
+401-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:342:9-345:59
+402            android:name="com.devlomi.fireapp.activities.BackupChatActivity"
+402-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:343:13-58
+403            android:label="@string/title_activity_backup_chat"
+403-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:344:13-63
+404            android:theme="@style/AppTheme.NoActionBar" />
+404-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:345:13-56
+405        <activity
+405-->[:imageeditengine] /Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/imageeditengine/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-17:20
+406            android:name="com.droidninja.imageeditengine.ImageEditActivity"
+406-->[:imageeditengine] /Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/imageeditengine/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-76
+407            android:theme="@style/LibAppTheme"
+407-->[:imageeditengine] /Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/imageeditengine/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-47
+408            android:windowSoftInputMode="adjustNothing" >
+408-->[:imageeditengine] /Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/imageeditengine/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-56
+409        </activity>
+410        <activity
+410-->[com.karumi:dexter:6.2.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/bc2e033f561c94796c1f09944b4a6081/jetified-dexter-6.2.2/AndroidManifest.xml:27:9-29:72
+411            android:name="com.karumi.dexter.DexterActivity"
+411-->[com.karumi:dexter:6.2.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/bc2e033f561c94796c1f09944b4a6081/jetified-dexter-6.2.2/AndroidManifest.xml:28:13-60
+412            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+412-->[com.karumi:dexter:6.2.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/bc2e033f561c94796c1f09944b4a6081/jetified-dexter-6.2.2/AndroidManifest.xml:29:13-69
+413        <activity
+413-->[com.github.broakenmedia:MultiContactPicker:1.8.5] /Users/jahan/.gradle/caches/transforms-2/files-2.1/85095015b1451bcdeb63ca78d5ad85dd/jetified-MultiContactPicker-1.8.5/AndroidManifest.xml:17:9-20:20
+414            android:name="com.wafflecopter.multicontactpicker.MultiContactPickerActivity"
+414-->[com.github.broakenmedia:MultiContactPicker:1.8.5] /Users/jahan/.gradle/caches/transforms-2/files-2.1/85095015b1451bcdeb63ca78d5ad85dd/jetified-MultiContactPicker-1.8.5/AndroidManifest.xml:18:13-90
+415            android:label="@string/picker_title" >
+415-->[com.github.broakenmedia:MultiContactPicker:1.8.5] /Users/jahan/.gradle/caches/transforms-2/files-2.1/85095015b1451bcdeb63ca78d5ad85dd/jetified-MultiContactPicker-1.8.5/AndroidManifest.xml:19:13-49
+416        </activity>
+417        <activity android:name="com.zhihu.matisse.ui.MatisseActivity" />
+417-->[com.zhihu.android:matisse:0.5.3-beta3] /Users/jahan/.gradle/caches/transforms-2/files-2.1/e4f590345783b6126417786e98196b12/jetified-matisse-0.5.3-beta3/AndroidManifest.xml:28:9-73
+417-->[com.zhihu.android:matisse:0.5.3-beta3] /Users/jahan/.gradle/caches/transforms-2/files-2.1/e4f590345783b6126417786e98196b12/jetified-matisse-0.5.3-beta3/AndroidManifest.xml:28:19-70
+418        <activity android:name="com.zhihu.matisse.internal.ui.AlbumPreviewActivity" />
+418-->[com.zhihu.android:matisse:0.5.3-beta3] /Users/jahan/.gradle/caches/transforms-2/files-2.1/e4f590345783b6126417786e98196b12/jetified-matisse-0.5.3-beta3/AndroidManifest.xml:29:9-87
+418-->[com.zhihu.android:matisse:0.5.3-beta3] /Users/jahan/.gradle/caches/transforms-2/files-2.1/e4f590345783b6126417786e98196b12/jetified-matisse-0.5.3-beta3/AndroidManifest.xml:29:19-84
+419        <activity android:name="com.zhihu.matisse.internal.ui.SelectedPreviewActivity" />
+419-->[com.zhihu.android:matisse:0.5.3-beta3] /Users/jahan/.gradle/caches/transforms-2/files-2.1/e4f590345783b6126417786e98196b12/jetified-matisse-0.5.3-beta3/AndroidManifest.xml:30:9-90
+419-->[com.zhihu.android:matisse:0.5.3-beta3] /Users/jahan/.gradle/caches/transforms-2/files-2.1/e4f590345783b6126417786e98196b12/jetified-matisse-0.5.3-beta3/AndroidManifest.xml:30:19-87
+420
+421        <provider
+421-->[com.github.CanHub:Android-Image-Cropper:2.1.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/059cb2b2dc6a8e9167b73ffb2b282e40/jetified-Android-Image-Cropper-2.1.1/AndroidManifest.xml:25:9-33:20
+422            android:name="com.canhub.cropper.CropFileProvider"
+422-->[com.github.CanHub:Android-Image-Cropper:2.1.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/059cb2b2dc6a8e9167b73ffb2b282e40/jetified-Android-Image-Cropper-2.1.1/AndroidManifest.xml:26:13-63
+423            android:authorities="com.devlomi.fireapp.cropper.fileprovider"
+423-->[com.github.CanHub:Android-Image-Cropper:2.1.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/059cb2b2dc6a8e9167b73ffb2b282e40/jetified-Android-Image-Cropper-2.1.1/AndroidManifest.xml:27:13-72
+424            android:exported="false"
+424-->[com.github.CanHub:Android-Image-Cropper:2.1.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/059cb2b2dc6a8e9167b73ffb2b282e40/jetified-Android-Image-Cropper-2.1.1/AndroidManifest.xml:28:13-37
+425            android:grantUriPermissions="true" >
+425-->[com.github.CanHub:Android-Image-Cropper:2.1.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/059cb2b2dc6a8e9167b73ffb2b282e40/jetified-Android-Image-Cropper-2.1.1/AndroidManifest.xml:29:13-47
+426            <meta-data
+426-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:330:13-332:58
+427                android:name="android.support.FILE_PROVIDER_PATHS"
+427-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:331:17-67
+428                android:resource="@xml/library_file_paths" />
+428-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:332:17-55
+429        </provider>
+430        <!--
+431             FirebaseMessagingService performs security checks at runtime,
+432             but set to not exported to explicitly avoid allowing another app to call it.
+433        -->
+434        <service
+434-->[com.google.firebase:firebase-messaging:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/5056194ad253e3c1739a705e71c27d6a/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:28:9-35:19
+435            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+435-->[com.google.firebase:firebase-messaging:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/5056194ad253e3c1739a705e71c27d6a/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:29:13-82
+436            android:directBootAware="true"
+436-->[com.google.firebase:firebase-messaging:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/5056194ad253e3c1739a705e71c27d6a/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:30:13-43
+437            android:exported="false" >
+437-->[com.google.firebase:firebase-messaging:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/5056194ad253e3c1739a705e71c27d6a/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:31:13-37
+438            <intent-filter android:priority="-500" >
+438-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:297:13-299:29
+439                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+439-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:298:17-78
+439-->/Users/jahan/Desktop/Projects/whatsapp-clone-android/FireApp Android App - V2.1.1/app/src/main/AndroidManifest.xml:298:25-75
+440            </intent-filter>
+441        </service>
+442        <service
+442-->[com.google.firebase:firebase-messaging:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/5056194ad253e3c1739a705e71c27d6a/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:36:9-42:19
+443            android:name="com.google.firebase.components.ComponentDiscoveryService"
+443-->[com.google.firebase:firebase-messaging:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/5056194ad253e3c1739a705e71c27d6a/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:37:13-84
+444            android:directBootAware="true"
+444-->[com.google.firebase:firebase-common:19.5.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/eb1fc9c5e9f0cfb4e6e4ec37e3ce4bf3/jetified-firebase-common-19.5.0/AndroidManifest.xml:35:13-43
+445            android:exported="false" >
+445-->[com.google.firebase:firebase-messaging:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/5056194ad253e3c1739a705e71c27d6a/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:38:13-37
+446            <meta-data
+446-->[com.google.firebase:firebase-messaging:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/5056194ad253e3c1739a705e71c27d6a/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:39:13-41:85
+447                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+447-->[com.google.firebase:firebase-messaging:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/5056194ad253e3c1739a705e71c27d6a/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:40:17-119
+448                android:value="com.google.firebase.components.ComponentRegistrar" />
+448-->[com.google.firebase:firebase-messaging:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/5056194ad253e3c1739a705e71c27d6a/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:41:17-82
+449            <meta-data
+449-->[com.google.firebase:firebase-auth:19.4.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/a564ddc786827583479ecfc2eb59042a/jetified-firebase-auth-19.4.0/AndroidManifest.xml:36:13-38:85
+450                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+450-->[com.google.firebase:firebase-auth:19.4.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/a564ddc786827583479ecfc2eb59042a/jetified-firebase-auth-19.4.0/AndroidManifest.xml:37:17-109
+451                android:value="com.google.firebase.components.ComponentRegistrar" />
+451-->[com.google.firebase:firebase-auth:19.4.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/a564ddc786827583479ecfc2eb59042a/jetified-firebase-auth-19.4.0/AndroidManifest.xml:38:17-82
+452            <meta-data
+452-->[com.google.firebase:firebase-database-ktx:19.6.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/ce75314487614142c05417e13ec45b3c/jetified-firebase-database-ktx-19.6.0/AndroidManifest.xml:15:13-17:85
+453                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+453-->[com.google.firebase:firebase-database-ktx:19.6.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/ce75314487614142c05417e13ec45b3c/jetified-firebase-database-ktx-19.6.0/AndroidManifest.xml:16:17-124
+454                android:value="com.google.firebase.components.ComponentRegistrar" />
+454-->[com.google.firebase:firebase-database-ktx:19.6.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/ce75314487614142c05417e13ec45b3c/jetified-firebase-database-ktx-19.6.0/AndroidManifest.xml:17:17-82
+455            <meta-data
+455-->[com.google.firebase:firebase-database:19.6.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/6405fa08c32b65b796dbb6024de2a465/jetified-firebase-database-19.6.0/AndroidManifest.xml:32:13-34:85
+456                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+456-->[com.google.firebase:firebase-database:19.6.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/6405fa08c32b65b796dbb6024de2a465/jetified-firebase-database-19.6.0/AndroidManifest.xml:33:17-109
+457                android:value="com.google.firebase.components.ComponentRegistrar" />
+457-->[com.google.firebase:firebase-database:19.6.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/6405fa08c32b65b796dbb6024de2a465/jetified-firebase-database-19.6.0/AndroidManifest.xml:34:17-82
+458            <meta-data
+458-->[com.google.firebase:firebase-storage-ktx:19.2.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/4cedf511812ed5836c7e0e6abe0d8093/jetified-firebase-storage-ktx-19.2.1/AndroidManifest.xml:15:13-17:85
+459                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
+459-->[com.google.firebase:firebase-storage-ktx:19.2.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/4cedf511812ed5836c7e0e6abe0d8093/jetified-firebase-storage-ktx-19.2.1/AndroidManifest.xml:16:17-122
+460                android:value="com.google.firebase.components.ComponentRegistrar" />
+460-->[com.google.firebase:firebase-storage-ktx:19.2.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/4cedf511812ed5836c7e0e6abe0d8093/jetified-firebase-storage-ktx-19.2.1/AndroidManifest.xml:17:17-82
+461            <meta-data
+461-->[com.google.firebase:firebase-storage:19.2.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/465e17be9f9786bddc3f6a1bb1c0389a/jetified-firebase-storage-19.2.1/AndroidManifest.xml:33:13-35:85
+462                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+462-->[com.google.firebase:firebase-storage:19.2.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/465e17be9f9786bddc3f6a1bb1c0389a/jetified-firebase-storage-19.2.1/AndroidManifest.xml:34:17-107
+463                android:value="com.google.firebase.components.ComponentRegistrar" />
+463-->[com.google.firebase:firebase-storage:19.2.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/465e17be9f9786bddc3f6a1bb1c0389a/jetified-firebase-storage-19.2.1/AndroidManifest.xml:35:17-82
+464            <meta-data
+464-->[com.google.firebase:firebase-functions:19.2.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/fadce21cc98c8f4194f4da7498b46a08/jetified-firebase-functions-19.2.0/AndroidManifest.xml:18:13-20:85
+465                android:name="com.google.firebase.components:com.google.firebase.functions.FunctionsRegistrar"
+465-->[com.google.firebase:firebase-functions:19.2.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/fadce21cc98c8f4194f4da7498b46a08/jetified-firebase-functions-19.2.0/AndroidManifest.xml:19:17-111
+466                android:value="com.google.firebase.components.ComponentRegistrar" />
+466-->[com.google.firebase:firebase-functions:19.2.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/fadce21cc98c8f4194f4da7498b46a08/jetified-firebase-functions-19.2.0/AndroidManifest.xml:20:17-82
+467            <meta-data
+467-->[com.google.firebase:firebase-common-ktx:19.5.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/91cb37762a898bf7b3213d767d6c0d32/jetified-firebase-common-ktx-19.5.0/AndroidManifest.xml:15:13-17:85
+468                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+468-->[com.google.firebase:firebase-common-ktx:19.5.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/91cb37762a898bf7b3213d767d6c0d32/jetified-firebase-common-ktx-19.5.0/AndroidManifest.xml:16:17-113
+469                android:value="com.google.firebase.components.ComponentRegistrar" />
+469-->[com.google.firebase:firebase-common-ktx:19.5.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/91cb37762a898bf7b3213d767d6c0d32/jetified-firebase-common-ktx-19.5.0/AndroidManifest.xml:17:17-82
+470            <meta-data
+470-->[com.google.firebase:firebase-iid:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/316a09d971697e996040a94797c23dcf/jetified-firebase-iid-21.0.1/AndroidManifest.xml:32:13-34:85
+471                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+471-->[com.google.firebase:firebase-iid:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/316a09d971697e996040a94797c23dcf/jetified-firebase-iid-21.0.1/AndroidManifest.xml:33:17-96
+472                android:value="com.google.firebase.components.ComponentRegistrar" />
+472-->[com.google.firebase:firebase-iid:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/316a09d971697e996040a94797c23dcf/jetified-firebase-iid-21.0.1/AndroidManifest.xml:34:17-82
+473            <meta-data
+473-->[com.google.firebase:firebase-datatransport:17.0.10] /Users/jahan/.gradle/caches/transforms-2/files-2.1/7dbaa6e544f9df0e2521c024bbca5c76/jetified-firebase-datatransport-17.0.10/AndroidManifest.xml:28:13-30:85
+474                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+474-->[com.google.firebase:firebase-datatransport:17.0.10] /Users/jahan/.gradle/caches/transforms-2/files-2.1/7dbaa6e544f9df0e2521c024bbca5c76/jetified-firebase-datatransport-17.0.10/AndroidManifest.xml:29:17-115
+475                android:value="com.google.firebase.components.ComponentRegistrar" />
+475-->[com.google.firebase:firebase-datatransport:17.0.10] /Users/jahan/.gradle/caches/transforms-2/files-2.1/7dbaa6e544f9df0e2521c024bbca5c76/jetified-firebase-datatransport-17.0.10/AndroidManifest.xml:30:17-82
+476            <meta-data
+476-->[com.google.android.gms:play-services-measurement-api:18.0.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/2f22b7b133f0a5e59e265567aeb19cab/jetified-play-services-measurement-api-18.0.2/AndroidManifest.xml:30:13-32:85
+477                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+477-->[com.google.android.gms:play-services-measurement-api:18.0.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/2f22b7b133f0a5e59e265567aeb19cab/jetified-play-services-measurement-api-18.0.2/AndroidManifest.xml:31:17-139
+478                android:value="com.google.firebase.components.ComponentRegistrar" />
+478-->[com.google.android.gms:play-services-measurement-api:18.0.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/2f22b7b133f0a5e59e265567aeb19cab/jetified-play-services-measurement-api-18.0.2/AndroidManifest.xml:32:17-82
+479            <meta-data
+479-->[com.google.firebase:firebase-installations:16.3.5] /Users/jahan/.gradle/caches/transforms-2/files-2.1/100d5907e86190e593e3c3b74eb66661/jetified-firebase-installations-16.3.5/AndroidManifest.xml:18:13-20:85
+480                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+480-->[com.google.firebase:firebase-installations:16.3.5] /Users/jahan/.gradle/caches/transforms-2/files-2.1/100d5907e86190e593e3c3b74eb66661/jetified-firebase-installations-16.3.5/AndroidManifest.xml:19:17-127
+481                android:value="com.google.firebase.components.ComponentRegistrar" />
+481-->[com.google.firebase:firebase-installations:16.3.5] /Users/jahan/.gradle/caches/transforms-2/files-2.1/100d5907e86190e593e3c3b74eb66661/jetified-firebase-installations-16.3.5/AndroidManifest.xml:20:17-82
+482            <!--
+483                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+484                clients to use it as well, by defining this registrar in their own core/common library.
+485            -->
+486            <meta-data
+486-->[com.google.firebase:firebase-common:19.5.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/eb1fc9c5e9f0cfb4e6e4ec37e3ce4bf3/jetified-firebase-common-19.5.0/AndroidManifest.xml:43:13-45:85
+487                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+487-->[com.google.firebase:firebase-common:19.5.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/eb1fc9c5e9f0cfb4e6e4ec37e3ce4bf3/jetified-firebase-common-19.5.0/AndroidManifest.xml:44:17-121
+488                android:value="com.google.firebase.components.ComponentRegistrar" />
+488-->[com.google.firebase:firebase-common:19.5.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/eb1fc9c5e9f0cfb4e6e4ec37e3ce4bf3/jetified-firebase-common-19.5.0/AndroidManifest.xml:45:17-82
+489        </service>
+490
+491        <activity
+491-->[com.google.firebase:firebase-auth:19.4.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/a564ddc786827583479ecfc2eb59042a/jetified-firebase-auth-19.4.0/AndroidManifest.xml:24:9-31:50
+492            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+492-->[com.google.firebase:firebase-auth:19.4.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/a564ddc786827583479ecfc2eb59042a/jetified-firebase-auth-19.4.0/AndroidManifest.xml:25:13-85
+493            android:excludeFromRecents="true"
+493-->[com.google.firebase:firebase-auth:19.4.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/a564ddc786827583479ecfc2eb59042a/jetified-firebase-auth-19.4.0/AndroidManifest.xml:26:13-46
+494            android:exported="true"
+494-->[com.google.firebase:firebase-auth:19.4.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/a564ddc786827583479ecfc2eb59042a/jetified-firebase-auth-19.4.0/AndroidManifest.xml:27:13-36
+495            android:launchMode="singleTask"
+495-->[com.google.firebase:firebase-auth:19.4.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/a564ddc786827583479ecfc2eb59042a/jetified-firebase-auth-19.4.0/AndroidManifest.xml:28:13-44
+496            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+496-->[com.google.firebase:firebase-auth:19.4.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/a564ddc786827583479ecfc2eb59042a/jetified-firebase-auth-19.4.0/AndroidManifest.xml:29:13-102
+497            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+497-->[com.google.firebase:firebase-auth:19.4.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/a564ddc786827583479ecfc2eb59042a/jetified-firebase-auth-19.4.0/AndroidManifest.xml:30:13-72
+498
+499        <service
+499-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:17:9-20:72
+500            android:name="com.evernote.android.job.v21.PlatformJobService"
+500-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:18:13-75
+501            android:exported="false"
+501-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:19:13-37
+502            android:permission="android.permission.BIND_JOB_SERVICE" />
+502-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:20:13-69
+503        <service
+503-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:21:9-24:72
+504            android:name="com.evernote.android.job.v14.PlatformAlarmService"
+504-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:22:13-77
+505            android:exported="false"
+505-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:23:13-37
+506            android:permission="android.permission.BIND_JOB_SERVICE" />
+506-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:24:13-69
+507        <service
+507-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:25:9-27:40
+508            android:name="com.evernote.android.job.v14.PlatformAlarmServiceExact"
+508-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:26:13-82
+509            android:exported="false" />
+509-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:27:13-37
+510
+511        <receiver
+511-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:29:9-38:20
+512            android:name="com.evernote.android.job.v14.PlatformAlarmReceiver"
+512-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:30:13-78
+513            android:exported="false" >
+513-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:31:13-37
+514            <intent-filter>
+514-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:32:13-37:29
+515
+516                <!-- Keep the filter for legacy intents -->
+517                <action android:name="com.evernote.android.job.v14.RUN_JOB" />
+517-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:35:17-79
+517-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:35:25-76
+518                <action android:name="net.vrallev.android.job.v14.RUN_JOB" />
+518-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:36:17-78
+518-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:36:25-75
+519            </intent-filter>
+520        </receiver>
+521        <receiver
+521-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:39:9-48:20
+522            android:name="com.evernote.android.job.JobBootReceiver"
+522-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:40:13-68
+523            android:exported="false" >
+523-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:41:13-37
+524            <intent-filter>
+524-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:42:13-47:29
+525                <action android:name="android.intent.action.BOOT_COMPLETED" />
+525-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:43:17-79
+525-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:43:25-76
+526                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+526-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:44:17-82
+526-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:44:25-79
+527                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+527-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:45:17-82
+527-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:45:25-79
+528                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+528-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:46:17-84
+528-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:46:25-81
+529            </intent-filter>
+530        </receiver>
+531
+532        <service
+532-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:50:9-58:19
+533            android:name="com.evernote.android.job.gcm.PlatformGcmService"
+533-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:51:13-75
+534            android:enabled="false"
+534-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:52:13-36
+535            android:exported="true"
+535-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:53:13-36
+536            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" >
+536-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:54:13-93
+537            <intent-filter>
+537-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:55:13-57:29
+538                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+538-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:56:17-87
+538-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:56:25-84
+539            </intent-filter>
+540        </service>
+541        <service
+541-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:59:9-62:72
+542            android:name="com.evernote.android.job.JobRescheduleService"
+542-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:60:13-73
+543            android:exported="false"
+543-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:61:13-37
+544            android:permission="android.permission.BIND_JOB_SERVICE" />
+544-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:62:13-69
+545
+546        <receiver
+546-->[com.google.firebase:firebase-iid:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/316a09d971697e996040a94797c23dcf/jetified-firebase-iid-21.0.1/AndroidManifest.xml:37:9-44:20
+547            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+547-->[com.google.firebase:firebase-iid:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/316a09d971697e996040a94797c23dcf/jetified-firebase-iid-21.0.1/AndroidManifest.xml:38:13-78
+548            android:exported="true"
+548-->[com.google.firebase:firebase-iid:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/316a09d971697e996040a94797c23dcf/jetified-firebase-iid-21.0.1/AndroidManifest.xml:39:13-36
+549            android:permission="com.google.android.c2dm.permission.SEND" >
+549-->[com.google.firebase:firebase-iid:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/316a09d971697e996040a94797c23dcf/jetified-firebase-iid-21.0.1/AndroidManifest.xml:40:13-73
+550            <intent-filter>
+550-->[com.google.firebase:firebase-iid:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/316a09d971697e996040a94797c23dcf/jetified-firebase-iid-21.0.1/AndroidManifest.xml:41:13-43:29
+551                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+551-->[com.google.firebase:firebase-iid:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/316a09d971697e996040a94797c23dcf/jetified-firebase-iid-21.0.1/AndroidManifest.xml:42:17-81
+551-->[com.google.firebase:firebase-iid:21.0.1] /Users/jahan/.gradle/caches/transforms-2/files-2.1/316a09d971697e996040a94797c23dcf/jetified-firebase-iid-21.0.1/AndroidManifest.xml:42:25-78
+552            </intent-filter>
+553        </receiver>
+554        <receiver
+554-->[com.google.android.gms:play-services-measurement:18.0.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/7eb3a1bba018c716726cf43924d5cb1d/jetified-play-services-measurement-18.0.2/AndroidManifest.xml:29:9-33:20
+555            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+555-->[com.google.android.gms:play-services-measurement:18.0.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/7eb3a1bba018c716726cf43924d5cb1d/jetified-play-services-measurement-18.0.2/AndroidManifest.xml:30:13-85
+556            android:enabled="true"
+556-->[com.google.android.gms:play-services-measurement:18.0.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/7eb3a1bba018c716726cf43924d5cb1d/jetified-play-services-measurement-18.0.2/AndroidManifest.xml:31:13-35
+557            android:exported="false" >
+557-->[com.google.android.gms:play-services-measurement:18.0.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/7eb3a1bba018c716726cf43924d5cb1d/jetified-play-services-measurement-18.0.2/AndroidManifest.xml:32:13-37
+558        </receiver>
+559
+560        <service
+560-->[com.google.android.gms:play-services-measurement:18.0.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/7eb3a1bba018c716726cf43924d5cb1d/jetified-play-services-measurement-18.0.2/AndroidManifest.xml:35:9-38:40
+561            android:name="com.google.android.gms.measurement.AppMeasurementService"
+561-->[com.google.android.gms:play-services-measurement:18.0.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/7eb3a1bba018c716726cf43924d5cb1d/jetified-play-services-measurement-18.0.2/AndroidManifest.xml:36:13-84
+562            android:enabled="true"
+562-->[com.google.android.gms:play-services-measurement:18.0.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/7eb3a1bba018c716726cf43924d5cb1d/jetified-play-services-measurement-18.0.2/AndroidManifest.xml:37:13-35
+563            android:exported="false" />
+563-->[com.google.android.gms:play-services-measurement:18.0.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/7eb3a1bba018c716726cf43924d5cb1d/jetified-play-services-measurement-18.0.2/AndroidManifest.xml:38:13-37
+564        <service
+564-->[com.google.android.gms:play-services-measurement:18.0.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/7eb3a1bba018c716726cf43924d5cb1d/jetified-play-services-measurement-18.0.2/AndroidManifest.xml:39:9-43:72
+565            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+565-->[com.google.android.gms:play-services-measurement:18.0.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/7eb3a1bba018c716726cf43924d5cb1d/jetified-play-services-measurement-18.0.2/AndroidManifest.xml:40:13-87
+566            android:enabled="true"
+566-->[com.google.android.gms:play-services-measurement:18.0.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/7eb3a1bba018c716726cf43924d5cb1d/jetified-play-services-measurement-18.0.2/AndroidManifest.xml:41:13-35
+567            android:exported="false"
+567-->[com.google.android.gms:play-services-measurement:18.0.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/7eb3a1bba018c716726cf43924d5cb1d/jetified-play-services-measurement-18.0.2/AndroidManifest.xml:42:13-37
+568            android:permission="android.permission.BIND_JOB_SERVICE" />
+568-->[com.google.android.gms:play-services-measurement:18.0.2] /Users/jahan/.gradle/caches/transforms-2/files-2.1/7eb3a1bba018c716726cf43924d5cb1d/jetified-play-services-measurement-18.0.2/AndroidManifest.xml:43:13-69
+569        <service
+569-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/jahan/.gradle/caches/transforms-2/files-2.1/4902b830868e5c42f7b4ddc07bc1c2cf/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+570            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+570-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/jahan/.gradle/caches/transforms-2/files-2.1/4902b830868e5c42f7b4ddc07bc1c2cf/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+571            android:exported="false" >
+571-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/jahan/.gradle/caches/transforms-2/files-2.1/4902b830868e5c42f7b4ddc07bc1c2cf/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+572            <meta-data
+572-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/jahan/.gradle/caches/transforms-2/files-2.1/4902b830868e5c42f7b4ddc07bc1c2cf/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+573                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+573-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/jahan/.gradle/caches/transforms-2/files-2.1/4902b830868e5c42f7b4ddc07bc1c2cf/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+574                android:value="cct" />
+574-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/jahan/.gradle/caches/transforms-2/files-2.1/4902b830868e5c42f7b4ddc07bc1c2cf/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+575        </service>
+576
+577        <provider
+577-->[com.google.firebase:firebase-common:19.5.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/eb1fc9c5e9f0cfb4e6e4ec37e3ce4bf3/jetified-firebase-common-19.5.0/AndroidManifest.xml:26:9-31:39
+578            android:name="com.google.firebase.provider.FirebaseInitProvider"
+578-->[com.google.firebase:firebase-common:19.5.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/eb1fc9c5e9f0cfb4e6e4ec37e3ce4bf3/jetified-firebase-common-19.5.0/AndroidManifest.xml:27:13-77
+579            android:authorities="com.devlomi.fireapp.firebaseinitprovider"
+579-->[com.google.firebase:firebase-common:19.5.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/eb1fc9c5e9f0cfb4e6e4ec37e3ce4bf3/jetified-firebase-common-19.5.0/AndroidManifest.xml:28:13-72
+580            android:directBootAware="true"
+580-->[com.google.firebase:firebase-common:19.5.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/eb1fc9c5e9f0cfb4e6e4ec37e3ce4bf3/jetified-firebase-common-19.5.0/AndroidManifest.xml:29:13-43
+581            android:exported="false"
+581-->[com.google.firebase:firebase-common:19.5.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/eb1fc9c5e9f0cfb4e6e4ec37e3ce4bf3/jetified-firebase-common-19.5.0/AndroidManifest.xml:30:13-37
+582            android:initOrder="100" />
+582-->[com.google.firebase:firebase-common:19.5.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/eb1fc9c5e9f0cfb4e6e4ec37e3ce4bf3/jetified-firebase-common-19.5.0/AndroidManifest.xml:31:13-36
+583
+584        <activity
+584-->[com.google.android.gms:play-services-base:17.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/a2a15e64df4dc637874dae3c880fa418/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+585            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+585-->[com.google.android.gms:play-services-base:17.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/a2a15e64df4dc637874dae3c880fa418/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+586            android:exported="false"
+586-->[com.google.android.gms:play-services-base:17.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/a2a15e64df4dc637874dae3c880fa418/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+587            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+587-->[com.google.android.gms:play-services-base:17.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/a2a15e64df4dc637874dae3c880fa418/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+588        <activity
+588-->[com.google.android.gms:play-services-ads-lite:19.7.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/d6c8158d8bed65bb190db24200ef6b8c/jetified-play-services-ads-lite-19.7.0/AndroidManifest.xml:48:9-52:64
+589            android:name="com.google.android.gms.ads.AdActivity"
+589-->[com.google.android.gms:play-services-ads-lite:19.7.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/d6c8158d8bed65bb190db24200ef6b8c/jetified-play-services-ads-lite-19.7.0/AndroidManifest.xml:49:13-65
+590            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+590-->[com.google.android.gms:play-services-ads-lite:19.7.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/d6c8158d8bed65bb190db24200ef6b8c/jetified-play-services-ads-lite-19.7.0/AndroidManifest.xml:50:13-122
+591            android:exported="false"
+591-->[com.google.android.gms:play-services-ads-lite:19.7.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/d6c8158d8bed65bb190db24200ef6b8c/jetified-play-services-ads-lite-19.7.0/AndroidManifest.xml:51:13-37
+592            android:theme="@android:style/Theme.Translucent" />
+592-->[com.google.android.gms:play-services-ads-lite:19.7.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/d6c8158d8bed65bb190db24200ef6b8c/jetified-play-services-ads-lite-19.7.0/AndroidManifest.xml:52:13-61
+593
+594        <provider
+594-->[com.google.android.gms:play-services-ads-lite:19.7.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/d6c8158d8bed65bb190db24200ef6b8c/jetified-play-services-ads-lite-19.7.0/AndroidManifest.xml:54:9-58:39
+595            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+595-->[com.google.android.gms:play-services-ads-lite:19.7.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/d6c8158d8bed65bb190db24200ef6b8c/jetified-play-services-ads-lite-19.7.0/AndroidManifest.xml:55:13-76
+596            android:authorities="com.devlomi.fireapp.mobileadsinitprovider"
+596-->[com.google.android.gms:play-services-ads-lite:19.7.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/d6c8158d8bed65bb190db24200ef6b8c/jetified-play-services-ads-lite-19.7.0/AndroidManifest.xml:56:13-73
+597            android:exported="false"
+597-->[com.google.android.gms:play-services-ads-lite:19.7.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/d6c8158d8bed65bb190db24200ef6b8c/jetified-play-services-ads-lite-19.7.0/AndroidManifest.xml:57:13-37
+598            android:initOrder="100" />
+598-->[com.google.android.gms:play-services-ads-lite:19.7.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/d6c8158d8bed65bb190db24200ef6b8c/jetified-play-services-ads-lite-19.7.0/AndroidManifest.xml:58:13-36
+599
+600        <service
+600-->[com.google.android.gms:play-services-ads-lite:19.7.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/d6c8158d8bed65bb190db24200ef6b8c/jetified-play-services-ads-lite-19.7.0/AndroidManifest.xml:60:9-63:40
+601            android:name="com.google.android.gms.ads.AdService"
+601-->[com.google.android.gms:play-services-ads-lite:19.7.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/d6c8158d8bed65bb190db24200ef6b8c/jetified-play-services-ads-lite-19.7.0/AndroidManifest.xml:61:13-64
+602            android:enabled="true"
+602-->[com.google.android.gms:play-services-ads-lite:19.7.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/d6c8158d8bed65bb190db24200ef6b8c/jetified-play-services-ads-lite-19.7.0/AndroidManifest.xml:62:13-35
+603            android:exported="false" />
+603-->[com.google.android.gms:play-services-ads-lite:19.7.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/d6c8158d8bed65bb190db24200ef6b8c/jetified-play-services-ads-lite-19.7.0/AndroidManifest.xml:63:13-37
+604
+605        <meta-data
+605-->[com.google.android.gms:play-services-basement:17.3.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/e92df1ccaa50a5f3a3ba8684229535fd/jetified-play-services-basement-17.3.0/AndroidManifest.xml:23:9-25:69
+606            android:name="com.google.android.gms.version"
+606-->[com.google.android.gms:play-services-basement:17.3.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/e92df1ccaa50a5f3a3ba8684229535fd/jetified-play-services-basement-17.3.0/AndroidManifest.xml:24:13-58
+607            android:value="@integer/google_play_services_version" />
+607-->[com.google.android.gms:play-services-basement:17.3.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/e92df1ccaa50a5f3a3ba8684229535fd/jetified-play-services-basement-17.3.0/AndroidManifest.xml:25:13-66
+608
+609        <provider
+609-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:30:9-36:35
+610            android:name="androidx.work.impl.WorkManagerInitializer"
+610-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:31:13-69
+611            android:authorities="com.devlomi.fireapp.workmanager-init"
+611-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:32:13-68
+612            android:directBootAware="false"
+612-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:33:13-44
+613            android:exported="false"
+613-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:34:13-37
+614            android:multiprocess="true" />
+614-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:35:13-40
+615
+616        <service
+616-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:38:9-43:35
+617            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+617-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:39:13-88
+618            android:directBootAware="false"
+618-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:40:13-44
+619            android:enabled="@bool/enable_system_alarm_service_default"
+619-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:41:13-72
+620            android:exported="false" />
+620-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:42:13-37
+621        <service
+621-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:44:9-50:35
+622            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+622-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:45:13-84
+623            android:directBootAware="false"
+623-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:46:13-44
+624            android:enabled="@bool/enable_system_job_service_default"
+624-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:47:13-70
+625            android:exported="true"
+625-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:48:13-36
+626            android:permission="android.permission.BIND_JOB_SERVICE" />
+626-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:49:13-69
+627
+628        <receiver
+628-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:52:9-57:35
+629            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+629-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:53:13-88
+630            android:directBootAware="false"
+630-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:54:13-44
+631            android:enabled="true"
+631-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:55:13-35
+632            android:exported="false" />
+632-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:56:13-37
+633        <receiver
+633-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:58:9-68:20
+634            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+634-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:59:13-106
+635            android:directBootAware="false"
+635-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:60:13-44
+636            android:enabled="false"
+636-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:61:13-36
+637            android:exported="false" >
+637-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:62:13-37
+638            <intent-filter>
+638-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:64:13-67:29
+639                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+639-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:65:17-87
+639-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:65:25-84
+640                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+640-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:66:17-90
+640-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:66:25-87
+641            </intent-filter>
+642        </receiver>
+643        <receiver
+643-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:69:9-79:20
+644            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+644-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:70:13-104
+645            android:directBootAware="false"
+645-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:71:13-44
+646            android:enabled="false"
+646-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:72:13-36
+647            android:exported="false" >
+647-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:73:13-37
+648            <intent-filter>
+648-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:75:13-78:29
+649                <action android:name="android.intent.action.BATTERY_OKAY" />
+649-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:76:17-77
+649-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:76:25-74
+650                <action android:name="android.intent.action.BATTERY_LOW" />
+650-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:77:17-76
+650-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:77:25-73
+651            </intent-filter>
+652        </receiver>
+653        <receiver
+653-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:80:9-90:20
+654            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+654-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:81:13-104
+655            android:directBootAware="false"
+655-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:82:13-44
+656            android:enabled="false"
+656-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:83:13-36
+657            android:exported="false" >
+657-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:84:13-37
+658            <intent-filter>
+658-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:86:13-89:29
+659                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+659-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:87:17-83
+659-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:87:25-80
+660                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+660-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:88:17-82
+660-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:88:25-79
+661            </intent-filter>
+662        </receiver>
+663        <receiver
+663-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:91:9-100:20
+664            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+664-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:92:13-103
+665            android:directBootAware="false"
+665-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:93:13-44
+666            android:enabled="false"
+666-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:94:13-36
+667            android:exported="false" >
+667-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:95:13-37
+668            <intent-filter>
+668-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:97:13-99:29
+669                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+669-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:98:17-79
+669-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:98:25-76
+670            </intent-filter>
+671        </receiver>
+672        <receiver
+672-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:101:9-112:20
+673            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+673-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:102:13-88
+674            android:directBootAware="false"
+674-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:103:13-44
+675            android:enabled="false"
+675-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:104:13-36
+676            android:exported="false" >
+676-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:105:13-37
+677            <intent-filter>
+677-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:107:13-111:29
+678                <action android:name="android.intent.action.BOOT_COMPLETED" />
+678-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:43:17-79
+678-->[com.evernote:android-job:1.2.6] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0d4056485828e7677423f72297f63f96/jetified-android-job-1.2.6/AndroidManifest.xml:43:25-76
+679                <action android:name="android.intent.action.TIME_SET" />
+679-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:109:17-73
+679-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:109:25-70
+680                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+680-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:110:17-81
+680-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:110:25-78
+681            </intent-filter>
+682        </receiver>
+683        <receiver
+683-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:113:9-122:20
+684            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+684-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:114:13-99
+685            android:directBootAware="false"
+685-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:115:13-44
+686            android:enabled="@bool/enable_system_alarm_service_default"
+686-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:116:13-72
+687            android:exported="false" >
+687-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:117:13-37
+688            <intent-filter>
+688-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:119:13-121:29
+689                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+689-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:120:17-98
+689-->[androidx.work:work-runtime:2.1.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/347c9576809bae1c121f0e716cba84d4/work-runtime-2.1.0/AndroidManifest.xml:120:25-95
+690            </intent-filter>
+691        </receiver>
+692
+693        <provider
+693-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/99fa90e531826b3d719ad8c4c8af793f/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+694            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+694-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/99fa90e531826b3d719ad8c4c8af793f/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+695            android:authorities="com.devlomi.fireapp.lifecycle-process"
+695-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/99fa90e531826b3d719ad8c4c8af793f/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+696            android:exported="false"
+696-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/99fa90e531826b3d719ad8c4c8af793f/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+697            android:multiprocess="true" />
+697-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/jahan/.gradle/caches/transforms-2/files-2.1/99fa90e531826b3d719ad8c4c8af793f/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+698
+699        <service
+699-->[androidx.room:room-runtime:2.2.3] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0fd12ad1840926ed02c85da9f370655c/room-runtime-2.2.3/AndroidManifest.xml:25:9-27:40
+700            android:name="androidx.room.MultiInstanceInvalidationService"
+700-->[androidx.room:room-runtime:2.2.3] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0fd12ad1840926ed02c85da9f370655c/room-runtime-2.2.3/AndroidManifest.xml:26:13-74
+701            android:exported="false" />
+701-->[androidx.room:room-runtime:2.2.3] /Users/jahan/.gradle/caches/transforms-2/files-2.1/0fd12ad1840926ed02c85da9f370655c/room-runtime-2.2.3/AndroidManifest.xml:27:13-37
+702        <service
+702-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/jahan/.gradle/caches/transforms-2/files-2.1/2873c92d5492f559314422fa8eb6a35b/jetified-transport-runtime-2.2.5/AndroidManifest.xml:26:9-30:19
+703            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+703-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/jahan/.gradle/caches/transforms-2/files-2.1/2873c92d5492f559314422fa8eb6a35b/jetified-transport-runtime-2.2.5/AndroidManifest.xml:27:13-117
+704            android:exported="false"
+704-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/jahan/.gradle/caches/transforms-2/files-2.1/2873c92d5492f559314422fa8eb6a35b/jetified-transport-runtime-2.2.5/AndroidManifest.xml:28:13-37
+705            android:permission="android.permission.BIND_JOB_SERVICE" >
+705-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/jahan/.gradle/caches/transforms-2/files-2.1/2873c92d5492f559314422fa8eb6a35b/jetified-transport-runtime-2.2.5/AndroidManifest.xml:29:13-69
+706        </service>
+707
+708        <receiver
+708-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/jahan/.gradle/caches/transforms-2/files-2.1/2873c92d5492f559314422fa8eb6a35b/jetified-transport-runtime-2.2.5/AndroidManifest.xml:32:9-34:40
+709            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+709-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/jahan/.gradle/caches/transforms-2/files-2.1/2873c92d5492f559314422fa8eb6a35b/jetified-transport-runtime-2.2.5/AndroidManifest.xml:33:13-132
+710            android:exported="false" />
+710-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/jahan/.gradle/caches/transforms-2/files-2.1/2873c92d5492f559314422fa8eb6a35b/jetified-transport-runtime-2.2.5/AndroidManifest.xml:34:13-37
+711    </application>
+712
+713</manifest>
